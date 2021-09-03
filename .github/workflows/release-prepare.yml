@@ -19,8 +19,6 @@ jobs:
     steps:
       - name: Checkout Wonder Source Code
         uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.inputs.branch }}
 
       - name: Cache local Maven repository
         uses: actions/cache@v2
